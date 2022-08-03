@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+  
+</head>
+<body>
+    <header>
+        <h2 style="background-color:red;">This is the header part of view.</h2>
+        @RenderPage("~/Views/Home/index.cshtml", "Nidhi", "Sahu", 123)
+
+        @*passing the data to the index.cshtml from layout file*@
+    </header>
+ 
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <h2 style="background-color:lightblue;">This is footer part</h2>
+        </footer>
+    </div>
+
+</body>
+</html>

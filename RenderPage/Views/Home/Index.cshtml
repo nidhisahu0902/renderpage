@@ -1,0 +1,17 @@
+﻿@{
+    var page = Page;
+    var f = Page[0];
+    var s = Page[1];
+    var t = Page[2];
+}
+
+<h1>Hello from index 1</h1>
+
+@*calling the page content for using this page*@
+@RenderPage("~/Views/Home/index2.cshtml")
+
+
+<p>data from layout file is</p>
+
+@*showing data here which has been sent by layout.cshtml file*@
+<h5>@f , @s , @t  </h5>
